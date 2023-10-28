@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="thiago campos dos santos">
+    <title>Pagina Inicial</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section id="global">
+        <h1>SISTEMA DE CÁLCULO DE NOTAS FISCAIS</h1>
+        <p>Em números decimais use <strong>ponto em vez de vírgulas</strong></p>
+    </section>
+
+<script>
+    let ValorUnitario = Number(prompt('Qual o valor Unitário:  - Use PONTO em vez de VÍRGULA' ));
+    let ValorSistema = Number(prompt('Qual valor consta no sistema: '));
+        let ValorAlcancar = Number(prompt('Qual valor deseja alcaçar: '));
+
+        let ValorFinal = (ValorUnitario * ValorAlcancar) / ValorSistema;
+        alert(ValorFinal.toFixed(2));
+</script>
+</body>
+</html>
